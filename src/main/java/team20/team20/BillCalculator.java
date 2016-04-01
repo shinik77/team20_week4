@@ -3,27 +3,27 @@ package team20.team20;
 public class BillCalculator {
 	private double expectedBill=0;
 	private int minutesUsed;
-	private double bill=0;
+
 	private Customer customerInfo;
 
 	customerInfo = new Customer("Ingyu");
-	public double calculateExpectedBill(){
+	public double calculateExpectedexpectedBill(){
 
-		bill = customerInfo.getPlanInfo().getBasicMonthlyRate();
+		expectedBill = customerInfo.getPlanInfo().getBasicMonthlyRate();
 		if(customerInfo.getNumberOfLines() >1)
 		{
 			if(customerInfo.getNumberOfLines >= 4)
 			{
-				bill = bill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine())+(customerInfo.getPlanInfo().getlineCostOver4*((customerInfo.getNumberOfLines)-3));
+				expectedBill = expectedBill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine())+(customerInfo.getPlanInfo().getlineCostOver4*((customerInfo.getNumberOfLines)-3));
 			}
-			bill = bill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine());
+			expectedBill = expectedBill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine());
 		}
 		if(customerInfo.getMinutesUsed() > customerInfo.getPlanInfo().getIncludedMinutes())
 		{
-			bill += (customerInfo.getPlanInfo().getRatePerAdditionalMinutes()*(customerInfo.getMinutesUsed()-customerInfo.getPlanInfo().getIncludedMinutes());
+			expectedBill += (customerInfo.getPlanInfo().getRatePerAdditionalMinutes()*(customerInfo.getMinutesUsed()-customerInfo.getPlanInfo().getIncludedMinutes());
 		}
 		
-		return bill;
+		return expectedBill;
 	}
 	public Customer getCustomerInfo(){
 		return customerInfo;
