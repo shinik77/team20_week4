@@ -1,3 +1,6 @@
+package team20.team20;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class BillView {
 
@@ -6,6 +9,7 @@ public class BillView {
 	private double expectedBill;
 	private Customer customerInfo;
 	private int minutesUsed;
+	private Logger log;
 
 
 	public BillView(){
@@ -16,11 +20,12 @@ public class BillView {
 	}
 
 	public void printAll(){
-		System.out.print("\nCustomerInfo : \nName : "+this.customerInfo.getCustomerName()+
+
+		log = Logger.getLogger("Logger");
+		log.log(Level.INFO, "\nCustomerInfo : \nName : "+this.customerInfo.getCustomerName()+
 		"\nCountry : "+this.customerInfo.getAddressInfo().getCountry()+
 		"\nCity : "+this.customerInfo.getAddressInfo().getCity()+
 		"\nStreet no : "+this.customerInfo.getAddressInfo().getStreetNo()+
-		"\n\nMinutes used : "+this.minutesUsed+"\nExpected Total Bill : ");
-		System.out.printf("%5.2f\n", this.expectedBill);
+		"\n\nMinutes used : "+this.minutesUsed+"\nExpected Total Bill : "+this.expectedBill);
 	}
 }

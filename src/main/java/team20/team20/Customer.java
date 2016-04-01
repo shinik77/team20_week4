@@ -1,4 +1,4 @@
-
+package team20.team20;
 public class Customer{
     private Plan planInfo;
     private InputClass input;
@@ -20,9 +20,9 @@ public class Customer{
         this.planType = input.getPlanType();
 
         this.name = name;
-        if(this.planType.equals("silver") || this.planType.equals("Silver")){
+        if("silver".equals(this.planType) || "Silver".equals(this.planType)){
             this.planInfo = new Silver();
-        }else if (this.planType.equals("gold") || this.planType.equals("Gold")){
+        }else if ("Gold".equals(this.planType) || "gold".equals(this.planType)){
             this.planInfo = new Gold();
         }
 

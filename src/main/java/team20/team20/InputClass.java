@@ -1,22 +1,27 @@
+package team20.team20;
+import java.util.Scanner;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
-import java.util.*;
 
 public class InputClass {
 	private Scanner scan;
 	private String planType;
 	private int numberOfLines;
 	private int usedAmount;
+	private Logger log;
 
 	public InputClass(){
+		log = Logger.getLogger("Logger");
 		scan=new Scanner(System.in);
 
-		System.out.println("Input Plan Type : ");
+		log.log(Level.INFO, "\nInput Plan Type :");
 		planType = scan.nextLine();
 
-		System.out.println("Input Used Amount :");
+		log.log(Level.INFO, "\nInput Used Amount :");
 		usedAmount = scan.nextInt();
 
-		System.out.println("Input Number Of Lines :");
+		log.log(Level.INFO, "\nInput Number Of Lines :");
 		numberOfLines = scan.nextInt();
 	}
 
@@ -25,10 +30,10 @@ public class InputClass {
 	}
 
 	public int getUsedAmount(){
-		return usedAmount;
+		return this.usedAmount;
 	}
 
 	public int getNumberOfLines(){
-		return numberOfLines;
+		return this.numberOfLines;
 	}
 }
