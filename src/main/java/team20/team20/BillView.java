@@ -4,12 +4,16 @@ public class BillView(){
 
 	BillCalculateExpectedBill billCalculated = new BillCalculateExpectedBill();
 	
-
+	private double expectedBill;
+	private Customer customerInfo;
+	private int minutesUsed;
+	
+	
 	public BillView(){
 	
-		private double expectedBill=billCalculated.calculateExpectedBill();
-		private Customer customerInfo=billCalculated.getCustomerInfo();
-		private int minutesUsed=billCalculated.getMinutesUsed();
+		expectedBill=billCalculated.calculateExpectedBill();
+		customerInfo=billCalculated.getCustomerInfo();
+		minutesUsed=billCalculated.getMinutesUsed();
 
 	}
 
