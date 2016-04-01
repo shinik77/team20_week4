@@ -1,4 +1,4 @@
-package team20.team20;
+package team.twenty;
 public class Gold extends Plan{
 
 	private double ratePerAdditionalLine;

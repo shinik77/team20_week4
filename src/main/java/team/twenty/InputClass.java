@@ -1,4 +1,4 @@
-package team20.team20;
+package team.twenty;
 import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.logging.Level;

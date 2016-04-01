@@ -1,4 +1,4 @@
-package team20.team20;
+package team.twenty;
 public class BillCalculator {
 	private double expectedBill;
 	private int minutesUsed;

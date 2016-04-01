@@ -1,4 +1,4 @@
-package team20.team20;
+package team.twenty;
 /**
  * siver plan extend abstract class plan
  */
