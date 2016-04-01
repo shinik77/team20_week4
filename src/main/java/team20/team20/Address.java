@@ -1,22 +1,21 @@
-package team20.team20;
 
 public class Address {
-	private String Country;
-	private String City;
-	private String StreetNo;
+	private String country;
+	private String city;
+	private String streetNo;
 
 	public Address(String country, String city, String streetNo){
-		Country = country;
-		City = city;
-		StreetNo = streetNo;
+		this.country = country;
+		this.city = city;
+		this.streetNo = streetNo;
 	}
 	public String getCountry(){
-		return Country;
+		return this.country;
 	}
 	public String getCity(){
-		return City;
+		return this.city;
 	}
 	public String getStreetNo(){
-		return StreetNo;
+		return this.streetNo;
 	}
 }

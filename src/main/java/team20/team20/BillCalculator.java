@@ -1,24 +1,17 @@
-package team20.team20;
 
 public class BillCalculator {
-	private double expectedBill=0;
+	private double expectedBill;
 	private int minutesUsed;
-
 	private Customer customerInfo;
 
-	customerInfo = new Customer("Ingyu");
-	public double calculateExpectedexpectedBill(){
+	BillCalculator(){
+		this.expectedBill = 0;
+		this.customerInfo = new Customer("In-gyu");
+		this.minutesUsed = customerInfo.getMinutesUsed();
+	}
 
-		expectedBill = customerInfo.getPlanInfo().getBasicMonthlyRate();
-		if(customerInfo.getNumberOfLines() >1)
-		{
-			if(customerInfo.getNumberOfLines >= 4)
-			{
-				expectedBill = expectedBill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine())+(customerInfo.getPlanInfo().getlineCostOver4*((customerInfo.getNumberOfLines)-3));
-
-	private Customer customerInfo = new Customer("Ingyu");
-	
 	public double calculateExpectedBill(){
+
 
 		expectedBill = customerInfo.getPlanInfo().getBasicMontlyRate();
 		if(customerInfo.getNumberOfLines() >1)
@@ -26,24 +19,21 @@ public class BillCalculator {
 			if(customerInfo.getNumberOfLines() >= 4)
 			{
 				expectedBill = expectedBill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine())+(customerInfo.getPlanInfo().getLineCostOver4()*((customerInfo.getNumberOfLines())-3));
+			}else{
+				expectedBill = expectedBill+((customerInfo.getNumberOfLines()-1)*customerInfo.getPlanInfo().getRatePerAdditionalLine());
 			}
-			expectedBill = expectedBill+(2*customerInfo.getPlanInfo().getRatePerAdditionalLine());
 		}
-		if(customerInfo.getMinutesUsed() > customerInfo.getPlanInfo().getIncludedMinutes())
+		if(this.minutesUsed > customerInfo.getPlanInfo().getIncludedMinutes())
 		{
-			expectedBill += (customerInfo.getPlanInfo().getRatePerAdditionalMinutes()*(customerInfo.getMinutesUsed()-customerInfo.getPlanInfo().getIncludedMinutes());
-			expectedBill += (customerInfo.getPlanInfo().getRatePerAdditionalMinutes()*(customerInfo.getMinutesUsed()-customerInfo.getPlanInfo().getIncludedMinutes()));
+			expectedBill += (customerInfo.getPlanInfo().getRatePerAdditionalMinutes()*(this.minutesUsed-customerInfo.getPlanInfo().getIncludedMinutes()));
 		}
-		
+
 		return expectedBill;
 	}
 	public Customer getCustomerInfo(){
-		return customerInfo;
+		return this.customerInfo;
 	}
 	public int getMinutesUsed(){
-		return minutesUsed;
+		return this.minutesUsed;
 	}
-
 }
-}
-

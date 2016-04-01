@@ -1,62 +1,31 @@
-package team20.team20
 
 public class Gold extends Plan{
-    
-    private double RatePerAdditionalLine;
-    private double RatePerAdditionalMinutes;
-    private double includeMinutes;
-    private double basicMontlyRate;
-    
-    public Gold(){
-        RatePerAdditionalLine=14.50;
-        RatePerAdditionalMinutes=0.45;
-        includeMinutes=1000;
-        basicMontlyRate=49.95;
-    }
-    
-    public double getBasicMontlyRate(){
-        return basicMontlyRate;
-    }
-    
-    public double getIncludedMinutes(){
-        return includeMinutes;
-    }
-    
-    public double getRatePerAdditionalMinutes(){
-        return RatePerAdditionalMinutes;
-    }
-    
-    public double getRatePerAdditionalLine(){
-        return RatePerAdditionalLine;
-    }
 
-	private double RatePerAdditionalLine;
-	private double RatePerAdditionalMinutes;
+	private double ratePerAdditionalLine;
+	private double ratePerAdditionalMinutes;
 	private double includeMinutes;
 	private double basicMontlyRate;
 
-
 	public Gold(){
-		RatePerAdditionalLine=14.50;
-		RatePerAdditionalMinutes=0.45;
-		includeMinutes=1000;
-		basicMontlyRate=49.95;
+		this.ratePerAdditionalLine=14.50;
+		this.ratePerAdditionalMinutes=0.45;
+		this.includeMinutes=1000;
+		this.basicMontlyRate=49.95;
 	}
 
-	protected double getBasicMontlyRate(){
-		return basicMontlyRate;
+	public double getBasicMontlyRate(){
+		return this.basicMontlyRate;
 	}
 
-	protected double getIncludedMinutes(){
-		return includeMinutes;
+	public double getIncludedMinutes(){
+		return this.includeMinutes;
 	}
 
-	protected double getRatePerAdditionalMinutes(){
-		return RatePerAdditionalMinutes;
+	public double getRatePerAdditionalMinutes(){
+		return this.ratePerAdditionalMinutes;
 	}
 
-	protected double getRatePerAdditionalLine(){
-		return RatePerAdditionalLine;
+	public double getRatePerAdditionalLine(){
+		return this.ratePerAdditionalLine;
 	}
-
 }
