@@ -9,15 +9,15 @@ public abstract class Plan{
     double ratePerAdditionalLine;
     double lineCostOver4;
     
-    protected abstract double getBasicMontlyRate();
+    public abstract double getBasicMontlyRate();
     
-    protected abstract double getIncludedMinutes();
+    public abstract double getIncludedMinutes();
     
-    protected abstract double getRatePerAdditionalMinutes();
+    public abstract double getRatePerAdditionalMinutes();
     
-    protected abstract double getRatePerAdditionalLine();
+    public abstract double getRatePerAdditionalLine();
     
-    protected double getLineCostOver4() {
+    public double getLineCostOver4() {
         return 5.0;
     }
 }

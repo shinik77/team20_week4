@@ -21,7 +21,7 @@ public class Silver extends Plan
      * Get basic monthly rate 29.95
      * @return basicMonthlyRate
      */
-    protected double getBasicMontlyRate() {
+    public double getBasicMontlyRate() {
         return this.basicMonthlyRate;
     }
     
@@ -29,7 +29,7 @@ public class Silver extends Plan
      * Get include minutes 500
      * @return includedMinutes
      */
-    protected double getIncludedMinutes() {
+    public double getIncludedMinutes() {
         return this.includedMinutes;
     }
     
@@ -37,7 +37,7 @@ public class Silver extends Plan
      * Get rate per additional minutes 0.54
      * @return RatePerAdditionalMinutes
      */
-    protected double getRatePerAdditionalMinutes() {
+    public double getRatePerAdditionalMinutes() {
         return this.RatePerAdditionalMinutes;
     }
     
@@ -45,7 +45,7 @@ public class Silver extends Plan
      * Get rate per additional line 21.5
      * @return RatePerAdditionalLine
      */
-    protected double getRatePerAdditionalLine() {
+    public double getRatePerAdditionalLine() {
         return this.RatePerAdditionalLine;
     }
 }
