@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 public class Customer{
     private Scanner scan;
+=======
+package team20.team20;
+
+public class Customer{
+>>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
     private Plan planInfo;
     private InputClass input;
     private String name;
@@ -13,11 +19,17 @@ public class Customer{
 
 
     Customer(String name){
+<<<<<<< HEAD
+=======
+    	this.input = new InputClass();
+    	
+>>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
         this.planType = input.getPlanType();
 
         this.name = name;
+<<<<<<< HEAD
         this.scan = new Scanner();
         this.input = new InputClass();
 
@@ -29,6 +41,16 @@ public class Customer{
         
         this.planInfo = new Plan();
         this.addressInfo = new Address();
+=======
+
+        if(this.planType == "silver" || this.planType == "Silver"){
+            this.planInfo = new Silver();
+        }else if (this.planType == "gold" || this.planType == "Gold"){
+            this.planInfo = new Gold();
+        }
+        
+        this.addressInfo = new Address("contry", "city", "StreetNo");
+>>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
 
     }
 
@@ -40,7 +62,11 @@ public class Customer{
         return this.name;
     }
 
+<<<<<<< HEAD
     public string getPlanType(){
+=======
+    public String getPlanType(){
+>>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
         return this.planType;
     }
 
@@ -55,8 +81,12 @@ public class Customer{
     public int getNumberOfLines(){
         return this.numberOfLines;
     }
+<<<<<<< HEAD
 
 
 
 
 }
+=======
+}
+>>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
