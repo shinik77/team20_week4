@@ -14,19 +14,19 @@ public class Gold extends Plan{
         basicMontlyRate=49.95;
     }
     
-    protected double getBasicMontlyRate(){
+    public double getBasicMontlyRate(){
         return basicMontlyRate;
     }
     
-    protected double getIncludedMinutes(){
+    public double getIncludedMinutes(){
         return includeMinutes;
     }
     
-    protected double getRatePerAdditionalMinutes(){
+    public double getRatePerAdditionalMinutes(){
         return RatePerAdditionalMinutes;
     }
     
-    protected double getRatePerAdditionalLine(){
+    public double getRatePerAdditionalLine(){
         return RatePerAdditionalLine;
     }
 }
