@@ -1,5 +1,7 @@
 package team20.team20
 
+import java.util.*;
+
 public class InputClass(){
 
 	private Scanner scan;
@@ -17,7 +19,7 @@ public class InputClass(){
 		numberOfLines=scan.nextDouble();
 	}
 
-	public Stirng getPlanType(){
+	public String getPlanType(){
 		return planType;
 	}
 
