@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package team20.team20
 
 public class BillView(){
@@ -25,7 +24,6 @@ public class BillView(){
 }
 
 
-=======
 package team20.team20;
 
 public class BillView {
@@ -47,4 +45,4 @@ public class BillView {
 	      System.out.println("CustomerInfo : "+customerInfo+"\nminutesUsed : "+minutesUsed+"\nExpectedBill : "+expectedBill);
 	}
 }
->>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
+

@@ -1,7 +1,6 @@
 package team20.team20
 
 public class Gold extends Plan{
-<<<<<<< HEAD
     
     private double RatePerAdditionalLine;
     private double RatePerAdditionalMinutes;
@@ -30,7 +29,6 @@ public class Gold extends Plan{
     public double getRatePerAdditionalLine(){
         return RatePerAdditionalLine;
     }
-=======
 
 	private double RatePerAdditionalLine;
 	private double RatePerAdditionalMinutes;
@@ -61,5 +59,4 @@ public class Gold extends Plan{
 		return RatePerAdditionalLine;
 	}
 
->>>>>>> 89236522824a9382d89b79622d74802924015f55
 }

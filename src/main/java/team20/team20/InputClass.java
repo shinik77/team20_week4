@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package team20.team20
 
 import java.util.*;
@@ -33,7 +32,6 @@ public class InputClass(){
 	}
 }
 
-=======
 package team20.team20;
 import java.util.*;
 
@@ -64,4 +62,4 @@ public class InputClass {
 	      return numberOfLines;
 	   }
 }
->>>>>>> 2d37213b57742714dcad97ed0bb46ba963e4b828
+
