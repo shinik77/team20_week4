@@ -1,3 +1,4 @@
+package team20.team20;
 public abstract class Plan{
 
     // Instance var.
@@ -5,17 +6,15 @@ public abstract class Plan{
     double includedMinutes;
     double ratePerAdditionalMinute;
     double ratePerAdditionalLine;
-    double lineCostOver4;
+    public static double lineCostOver4 = 5.0;
 
-    protected abstract double getBasicMontlyRate();
+    // getters
+    public abstract double getBasicMontlyRate();
 
-    protected abstract double getIncludedMinutes();
+    public abstract double getIncludedMinutes();
 
-    protected abstract double getRatePerAddition();
+    public abstract double getRatePerAdditionalMinutes();
 
-    protected abstract double getRatePerAdditionalLine();
-
-    protected abstract double getLineCostOver4();
-
+    public abstract double getRatePerAdditionalLine();
 
 }

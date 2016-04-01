@@ -1,5 +1,5 @@
+package team20.team20;
 public class Customer{
-    private Scanner scan;
     private Plan planInfo;
     private InputClass input;
     private String name;
@@ -13,22 +13,20 @@ public class Customer{
 
 
     Customer(String name){
+    	this.input = new InputClass();
+
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
         this.planType = input.getPlanType();
 
         this.name = name;
-        this.scan = new Scanner();
-        this.input = new InputClass();
-
-        if(this.planType == "silver" || "Silver"){
+        if("silver".equals(this.planType) || "Silver".equals(this.planType)){
             this.planInfo = new Silver();
-        }else if (this.planType = "gold" || "Gold"){
+        }else if ("Gold".equals(this.planType) || "gold".equals(this.planType)){
             this.planInfo = new Gold();
         }
-        
-        this.planInfo = new Plan();
-        this.addressInfo = new Address();
+
+        this.addressInfo = new Address("Chung-nam", "Cheon-an", "123-322");
 
     }
 
@@ -40,7 +38,7 @@ public class Customer{
         return this.name;
     }
 
-    public string getPlanType(){
+    public String getPlanType(){
         return this.planType;
     }
 
@@ -55,8 +53,4 @@ public class Customer{
     public int getNumberOfLines(){
         return this.numberOfLines;
     }
-
-
-
-
 }
