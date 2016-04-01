@@ -6,11 +6,17 @@ package team20.team20;
 
 public class Silver extends Plan
 {
-    private double basicMonthlyRate = 29.95;
-    private double includedMinutes = 500;
-    private double RatePerAdditionalMinutes = 0.54;
-    private double RatePerAdditionalLine = 21.5;
+    private double basicMonthlyRate;
+    private double includedMinutes;
+    private double RatePerAdditionalMinutes;
+    private double RatePerAdditionalLine;
     
+    public Silver() {
+        basicMonthlyRate = 29.95;
+        includedMinutes = 500;
+        RatePerAdditionalMinutes = 0.54;
+        RatePerAdditionalLine = 21.5;
+    }
     /*
      * Get basic monthly rate 29.95
      * @return basicMonthlyRate
@@ -23,7 +29,7 @@ public class Silver extends Plan
      * Get include minutes 500
      * @return includedMinutes
      */
-    protected double getIncludeMinutes() {
+    protected double getIncludedMinutes() {
         return this.includedMinutes;
     }
     
